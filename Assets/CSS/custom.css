@@ -1,0 +1,37 @@
+
+@media (max-width: 768px) {
+    .connect-with-me{
+      display: none;
+    }
+    .main-content-inner{
+        border-right-width: none;
+    }
+}
+  
+.header, .navigation, .main-content, footer{
+    border-left:1px #94908a solid;
+    border-right:1px #94908a solid;
+}
+.navigation{
+    margin-top: -20px; background-color:rgb(64, 15, 97);
+}
+footer{
+    border-bottom: 1px #94908a solid;
+    background-color: rgb(64, 15, 97);
+    margin-top: -15px; 
+    margin-bottom: 20px;
+}
+.header{
+    border-top:1px #94908a solid;
+}
+.main-content{
+    border-bottom:2px #94908a solid;
+}
+.main-content-inner{
+    border-right:1px dashed #c2c1be;;
+}
+.main-content hr{
+    border-color:#c0bfba; 
+    border-style: dashed;
+}
+

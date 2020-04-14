@@ -11,18 +11,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
     <link rel="stylesheet" href="./Assets/CSS/all.min.css">
     <script src="./Assets/JavaScript/all.min.js"></script>
+    <link rel="stylesheet" href="./Assets/CSS/custom.css">
 </head>
 
 
 <body style="background-color: rgb(219, 214, 214);">
 
 <!--Header -->
-<div class="container container-sm my-3  bg-white" style="border-left:1px #94908a solid; border-top:1px #94908a solid; border-right:1px #94908a solid ;">
-    <a href="index.html" style="text-decoration:none;"><h1 class="display-3 p-3 text-center font-weight-bold" style="color: rgb(64, 15, 97);">Natnael Bekabtu</h1></a>
+<div class="header container container-sm my-3  bg-white">
+    <a href="index.html" style="text-decoration:none;"><h1 class="display-4 p-3 text-center font-weight-bold" style="color: rgb(64, 15, 97);">Natnael Bekabtu</h1></a>
 </div>
 
 <!--Navigation-->
-<nav class="container container-sm navbar navbar-expand-md  navbar-dark " style="margin-top: -20px; background-color:rgb(64, 15, 97);border-left:1px #94908a solid;border-right:1px #94908a solid;">
+<nav class="navigation container container-sm navbar navbar-expand-md  navbar-dark">
     <!--Toggler Button for navigation-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -50,60 +51,78 @@
 </nav>  
 
 <!--About main content-->
-<div class="container container-sm bg-white mb-3 pb-3 " style="border-left: 1px #94908a solid; border-right:1px #94908a solid;border-bottom:2px #94908a solid ;">
+<div class="main-content container container-sm bg-white mb-3 pb-1 ">
+
     <div class="row">
-        <div class="col-sm-8 pt-2">
-            <h1>About me </h1>
-            <hr style="color:#94908a; border-style: dashed;">
+        <div class="col-md-8 pt-2 main-content-inner">
+          <h1>About me </h1>
+          <hr>
         </div>
-        <div class="col-sm-4" style="border-left: 1px dashed #c2c1be;">
-            <div class="container pb-2 ">
-                <h3>Connect with me:</h3>
-                       
-                <a href="https://www.facebook.com/" target="blank"><img src="./Assets/Images/logos/facebook.png" alt="facebook logo"></a>&nbsp;&nbsp;
-                <a href="htts://www.twitter.com/bekabtu" target="blank"><img src="./Assets/Images/logos/twitter.png" alt="Twitter logo"></a>&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/" target="blank"><img src="./Assets/Images/logos/linkedin.png" alt="Linkedin logo"></a>&nbsp;&nbsp;
-            </div>
-            <hr style="color:#94908a; border-style: dashed;">  
+        <div class="col-md-4" >
+          <div class="container pb-2 pt-2 connect-with-me">
+              <h5 style="text-transform: uppercase; font-size: medium;font-weight: lighter;">connect with me</h5>                  
+              <a href="https://www.facebook.com/" target="blank"><img src="./Assets/Images/logos/facebook.png" alt="facebook logo"></a>&nbsp;&nbsp;
+              <a href="htts://www.twitter.com/bekabtu" target="blank"><img src="./Assets/Images/logos/twitter.png" alt="Twitter logo"></a>&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/" target="blank"><img src="./Assets/Images/logos/linkedin.png" alt="Linkedin logo"></a>&nbsp;&nbsp;
+              
+          </div>
+          
         </div>
+        
+        <div class="col-md-8 main-content-inner">
+              <div class="col">
+                <img src="./Assets/Images/profile_pic.jpg" alt="profile picture" style="width: 200px; height: 200px;border-radius: 50%;float: left;margin-right: 10px;">
+              </div>
+              <div class="col">
+                <p class="ml-2">Hi there! My name is Natnael Bekabtu. I’m currently a software engineering student at Ababa University Institute of Technology which is located in 5 kilo.
+                  Besides that I am a simple guy with simple tastes. In my free time I like to watch movies , playing video games and hanging out with my friends.
+                  I am also a physics nerd and enjoy learning about technology. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam incidunt doloribus aperiam dolores eius  est, in esse voluptas, Consequuntur, ipsam incidunt doloribus aperiam dolores eius  est, in esse voluptas,
+                  animi culpa quisquam reiciendis at ab excepturi nihil unde veritatis molestias!
+                  Lorem ipsum dolor sit  amet consectetur adipisicing elit. Dolorem voluptatem vel soluta veritatis quis fuga incidunt reiciendis laboriosam molestiae  harum voluptate et suscipit maxime doloremque quo velit, accusamus amet sed!</p>
+              </div>
+              <div class="col">
+                
+                <h3 class="pb-3 pt-3">Why Physics</h3>
+
+                <p>I believe that my curious nature as perhaps peaked in grade seven which was when my love affair with physics began. I was very interested in physics because to a certain  degree it has answered many questions about our understanding of the universe. I was so interested in fact that I began to read outside the school curriculum and familiarized 
+                 myself with the works of Gallileo and Newton about the heavens' motion, revolutionary work of Albert Eistein's relativity and the contemporary work of Richard  Feynman,
+                a pioneer in the development of quantum theory, because they have challenged the prevailing views about the laws of  nature and succeeded in unvieling some secrets of the universe.  
+                </p>
+
+                <h3 class="pb-3 pt-3">Tech Savy</h3>
+
+                <p>I have always been fascinated by computers and networks. My dad bought my first computer when I was 10. I was fascinated by 
+                  these machines that can basically do everything. But it wasn't until our 10th grade Information technology class where we learned the basics 
+                  of the programming language c++ that I trully began to understand how these fascinating things operated. I found it a refreshing and neat way of solving the problems of the future. 
+                </p>
+
+              </div>           
+                  
+        </div>
+       
+        <div class="col-md-4">
+          <hr> 
+          <div class="container">
+            <h5 style="text-transform: uppercase; font-size: medium;font-weight: lighter;">follow me on twitter</h5>
+            <div class="d-flex justify-content-center">
+              <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/DrStevenKinnear?ref_src=twsrc%5Etfw">Tweets by DrStevenKinnear</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
+          </div>
+          <hr id="twitter-bottom-border">
+        </div>       
     </div>
     
-    <div class="row">
-        <div class="col-8">
-            
-            <img src="./Assets/Images/profile_pic.jpg" alt="profile picture" style="width: 200px; height: 200px; float: right;">
-            <p class="lead">Hi there! My name is Natnael Bekabtu. I’m currently a software engineering student at Ababa University Institute of Technology ,located in 5 kilo.
-                Besides that I am a simple guy with simple tastes. In my free time I like to watch movies , playing video games and hanging out with my friends.
-                I am also a physics nerd and enjoy learning about technology. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam incidunt doloribus aperiam dolores eius  est, in esse voluptas, animi culpa quisquam reiciendis at ab excepturi nihil unde veritatis molestias!
-                Lorem ipsum dolor sit  amet consectetur adipisicing elit. Dolorem voluptatem vel soluta veritatis quis fuga incidunt reiciendis laboriosam molestiae  harum voluptate et suscipit maxime doloremque quo velit, accusamus amet sed!  
-            </p>       
-        </div>
-        <div class="col-4 ">
 
-        </div>
-    </div> 
+  
 
-    <h1>Why Physics</h1>
 
-    <p>I believe that my curious nature as perhaps peaked in grade seven which was when my love affair with physics began. I was very interested in physics because to a certain  degree it has answered many questions about our understanding of the universe. I was so interested in fact that I began to read outside the school curriculum and familiarized 
-     myself with the works of Gallileo and Newton about the heavens' motion, revolutionary work of Albert Eistein's relativity and the contemporary work of Richard  Feynman,
-    a pioneer in the development of quantum theory, because they have challenged the prevailing views about the laws of  nature and succeeded in unvieling some secrets of the universe.  
-    </p>
-
-    <a class="twitter-timeline" href="https://twitter.com/bekabtu?ref_src=twsrc%5Etfw" data-height="400" data-width="400">Tweets by bekabtu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    <h1>Tech Savy</h1>
-
-    <p>I have always been fascinated by computers and networks. My dad bought my first computer when I was 10. I was fascinated by 
-    these machines that can basically do everything. But it wasn't until our 10th grade Information technology class where we learned the basics 
-    of the programming language c++ that I trully began to understand how these fascinating things operated. I found it a refreshing and neat way of solving the problems of the future. 
-    </p>
+    
 
 </div>
+<!--About main content-->
 
 
 <!-- Footer -->
-<footer class="container page-footer text-white font-small" style="background-color: rgb(64, 15, 97);margin-top: -15px; margin-bottom: 20px;border-left: 1px #94908a solid; border-right:1px #94908a solid;border-bottom:1px #94908a solid ;">
+<footer class="container page-footer text-white font-small">
 
     <!-- Footer Links -->
     <div class="container">
