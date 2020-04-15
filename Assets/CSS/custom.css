@@ -3,11 +3,20 @@
     .connect-with-me{
       display: none;
     }
-    .main-content-inner{
-        border-right-width: none;
+    .main-content .main-content-inner{
+        border: none;
+    }
+    #fName , #lname , #email, #telephone{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0%;
+        text-align: center;   
     }
 }
-  
+body{
+    background-color: rgb(219, 214, 214);
+}
 .header, .navigation, .main-content, footer{
     border-left:1px #94908a solid;
     border-right:1px #94908a solid;
