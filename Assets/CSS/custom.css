@@ -13,8 +13,18 @@
         border-radius: 0%;
         text-align: center;   
     }
-    
+}
 
+@media (min-width:768px) {
+    .blog-embed{
+        margin-top: -1250px;
+    }
+    #embed-break{
+        position: relative;
+        top:-580px;
+
+    }
+    
 }
 body{
     background-color: rgb(219, 214, 214);
@@ -91,4 +101,13 @@ footer{
 .pageChanger li:last-child{
     margin-left: 10px;
 }
+
+.other-posts-title{
+    background: rgb(64, 15, 97);
+    color: rgba(255, 255, 255, 0.87);
+    border-radius: 50px;
+    text-align: center;
+}
+
+
 
