@@ -13,6 +13,8 @@
         border-radius: 0%;
         text-align: center;   
     }
+    
+
 }
 body{
     background-color: rgb(219, 214, 214);
@@ -42,5 +44,51 @@ footer{
 .main-content hr{
     border-color:#c0bfba; 
     border-style: dashed;
+}
+
+.paginationCol {
+    display: flex;
+    justify-content: center;
+}
+.pageChanger{
+    background: #fff;
+    display: flex;  
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.2);
+}
+
+.pageChanger li{
+    list-style: none;
+    line-height: 30px;
+    margin: 0px 5px;
+}
+
+.pageChanger li.pageNumber{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.pageChanger li a{
+    display: block;
+    text-decoration: none;
+    color: #777777;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.pageChanger li.pageNumber:hover a, .pageChanger li.active a{
+    background: rgb(64, 15, 97);
+    color: #fff;
+}
+
+.pageChanger li:first-child{
+    margin-right: 10px;
+}
+
+.pageChanger li:last-child{
+    margin-left: 10px;
 }
 
