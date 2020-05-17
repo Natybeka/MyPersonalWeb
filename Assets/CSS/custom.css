@@ -108,6 +108,16 @@ footer{
     border-radius: 50px;
     text-align: center;
 }
+.blog-link{
+    text-decoration: none;
+    color: black;
+}
+.blog-link:hover{
+    text-transform: underline;
+}
 
-
+.article-post{
+    font-family: dosis;
+    font-size: 1.3rem;
+}
 
