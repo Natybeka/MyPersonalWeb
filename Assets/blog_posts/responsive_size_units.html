@@ -52,26 +52,38 @@
 <div class="main-content container contaner-md bg-white mb-3 pb-1">
     <div class="row">
         <div class="col-md-8 pt-2 main-content-inner">    
-            <img class="card-img img-fluid" src="../Images/blog/ide_editor.png" alt="IDEs and editors" width="480px" >  
-            <h1 class="card-title">Text Editors vs IDEs when to use which</h1>
-            <em class="font-weight-light">By</em> <strong>Natnael Bekabtu</strong> <em class="font-weight-light"> on March 10, 2020</em><br><br>
+            <img class="card-img-top img-fliud" src="../Images/blog/responsive_web_design.jpg" style="height:400px;" alt="prevention of the corona virus">  
+            <h1>Responsive size units for Responsive web design</h1>
+            <em class="font-weight-light">By</em> <strong>Natnael Bekabtu</strong> <em class="font-weight-light"> on March 18, 2020</em><br><br>
             <div class="article-post">
-                <p>Most programmers use either IDEs or text editors to write, run or edit their code. Although there 
-                    is much debate as to what to use, both have some advantages over the other. IDEs or Integrated development 
-                    environments are softwares that have many facilities in building and running code. They usually have code 
-                    sensing tools, as well as comprehensive debuggers, compilers and testers. Some common IDE's include intellij,
-                    Pycharm, Eclipse and Visual Studio. Although IDEs have a lot of tools built into them the downside is that they may  require
-                    a large amount of resource to run smoothly. It is not advised to use ides to edit 2 or 3 code files. IDEs are
-                    mostly recommended when dealing with a huge project that has a lot of code files. 
-               </p>
-               <p>
-                   Text editors like sublime text, notepad++ or visual studio code give the simplicity that IDEs simply cannot provide. 
-                   Using editors in many ways makes amateur programmers better at their craft because each line of code has to be completed 
-                   manually instead of autocompleted. The programs can then be run from a command prompt using the necessary commands. 
-                   Nowadays text editors like visual studio code have plugins like code completion that can be downloaded for specific 
-                    programming language so that developers can install packages that can make their work easier. This gives the developer 
-                    more options as to what he/she requires when coding.
-               </p>
+                <p>Before the advent of relative  size units, pixel units were largely used to size items in the viewport (available window). <em> px </em> values are exactly intrepreted by the browser as they are. pixel is an absolute size unit 
+                    meaning that it doesn't take into consideration the scalability of the web design when it is used across different devices with different screen sizes and resolutions, not to mention the need for the user to use 
+                    the zoom feature of a browser for better visibility. Other absolute units include cm, mm and pt. Relative length units on the other hand specify a length relative to another property. Examples of relative units include
+                em, % and rem. Each has its own advantage and drawback.  </p>
+                
+                 <p>A responsive web design is one that involves the use CSS and HTML to automatically in order to make a website accessible to various devices (desktop, phones and tablets). Percent value units for length measure the length in proportion
+                    to the parent container. For example, if the there is a div tag inside the body tag and the its width attribute is set to 50%, then the browser translates it to "half the length of the body tag". If the parent container doesn't have a 
+                    specified length attribute value then it goes up the browser tries to find the next parent in DOM tree heirarchy (in the example above the body tag) and take the corresponding relative measurement.
+                </p>
+               
+                <p>Percentage units are commonly used to specify the width and height of containers and to create responsive images. If the width property of an image is set to 100%, the image will be responsive and scales nicely for various devices
+                    A better option in many may be to use the "max-width" or "min-width" attribute, which makes the image scaled up of down if the viewport is larger or smaller than its original size. 
+                </p>
+                
+                <p>Other major units are the <em>rem</em> and  <em>em</em> units. The <em>em</em> is a unit that uses the font size of the <strong> styled</strong> (not the font-size of the parent element) element to translate it into the standard <em> px</em> value. This translation is done by the browser. When using em
+                units, the pixel value is calculated by multiplying the font-size of the element being styled. For example, if a div has a font-size of 19px, a "padding value" of 10em is equivalent to 190px. The problem with using <em>em</em> arises when elements 
+                inherit font sizes from parent containers. Suppose we have a page with default font size (usually 16px) and a child div inside it with a padding of 1.5em, that div will inherit the font-size of 16px from the root element. This means that the padding is
+                equivalent to 24px. If another div is then wrapped around the first div and set its font-size to 1.25em, it will inherit the root font-size of 16px and multiply it by 1.25 to get 20px. Adding a padding value of 1.5em would now equate to 30px. If wee keep
+                adding div tags to this heirarchy with <em>em</em> based font-sizes the scaling effect for the font-size and padding attributes will be compounded, which will greatly hinder the visibility of the website. 
+                This is when using the <em>rem</em> unit would come in handy. The <em>rem</em> unit uses the font-size of the parent element rather than the styled element.
+            </p>
+            
+            <p>
+                These three units can be used in conjunction to create a responsive website. Although web developers may not exactly agree on which unit to use where, most recommend some guidelines to maintain responsiveness.
+                 The percentage unit is optimal for image and div sizing and boosts their scalability. It is also not conventional to use <em>em</em> unit for font-size attributes because the resulting typography attributes like the 
+                 padding and margin will not be proportional. Instead <em>rem</em> is recommended for setting the font-size attribute because it inherts attributes directly from the parent element. This gives more consistent resizing and
+                 ensures whatever default size a user's browser may have, the layout will adjust accordingly.    
+            </p>
             </div>
             <hr>
             <h2 class="pb-2">Leave a reply...</h2>
@@ -144,7 +156,7 @@
         <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
-            <a href="../../index.html" class="text-light small" style="text-decoration: none;">About</a>
+            <a href="index.html" class="text-light small" style="text-decoration: none;">About</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -152,7 +164,7 @@
         <!-- Grid column -->
         <div class="col-md-2 ">
           <h6 class="text-uppercase font-weight-bold">
-            <a href="../../blog.html" class="text-light small" style="text-decoration: none;">Blog</a>
+            <a href="blog.html" class="text-light small" style="text-decoration: none;">Blog</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -160,7 +172,7 @@
         <!-- Grid column -->
         <div class="col-md-2 ">
           <h6 class="text-uppercase font-weight-bold">
-            <a href="../../contact.html" class="text-light small" style="text-decoration: none;">Contact</a>
+            <a href="contact.html" class="text-light small" style="text-decoration: none;">Contact</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -168,7 +180,7 @@
         <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
-            <a href="../../CV.html" class="text-light small" style="text-decoration: none;">Credentials</a>
+            <a href="CV.html" class="text-light small" style="text-decoration: none;">Credentials</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -176,7 +188,7 @@
         <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
-            <a href="../../recommendations.html" class="text-light small" style="text-decoration: none;">Recommendations</a>
+            <a href="recommendations.html" class="text-light small" style="text-decoration: none;">Recommendations</a>
           </h6>
         </div>
         <!-- Grid column -->
@@ -241,8 +253,3 @@
 </footer>
 <!-- Footer -->
 </body>
-              
-       
-        
-        
-     

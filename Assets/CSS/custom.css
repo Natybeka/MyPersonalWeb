@@ -1,0 +1,123 @@
+
+@media (max-width: 768px) {
+    .connect-with-me{
+      display: none;
+    }
+    .main-content .main-content-inner{
+        border: none;
+    }
+    #fName , #lname , #email, #telephone{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0%;
+        text-align: center;   
+    }
+}
+
+@media (min-width:768px) {
+    .blog-embed{
+        margin-top: -1250px;
+    }
+    #embed-break{
+        position: relative;
+        top:-580px;
+
+    }
+    
+}
+body{
+    background-color: rgb(219, 214, 214);
+}
+.header, .navigation, .main-content, footer{
+    border-left:1px #94908a solid;
+    border-right:1px #94908a solid;
+}
+.navigation{
+    margin-top: -20px; background-color:rgb(64, 15, 97);
+}
+footer{
+    border-bottom: 1px #94908a solid;
+    background-color: rgb(64, 15, 97);
+    margin-top: -15px; 
+    margin-bottom: 20px;
+}
+.header{
+    border-top:1px #94908a solid;
+}
+.main-content{
+    border-bottom:2px #94908a solid;
+}
+.main-content-inner{
+    border-right:1px dashed #c2c1be;;
+}
+.main-content hr{
+    border-color:#c0bfba; 
+    border-style: dashed;
+}
+
+.paginationCol {
+    display: flex;
+    justify-content: center;
+}
+.pageChanger{
+    background: #fff;
+    display: flex;  
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.2);
+}
+
+.pageChanger li{
+    list-style: none;
+    line-height: 30px;
+    margin: 0px 5px;
+}
+
+.pageChanger li.pageNumber{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.pageChanger li a{
+    display: block;
+    text-decoration: none;
+    color: #777777;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.pageChanger li.pageNumber:hover a, .pageChanger li.active a{
+    background: rgb(64, 15, 97);
+    color: #fff;
+}
+
+.pageChanger li:first-child{
+    margin-right: 10px;
+}
+
+.pageChanger li:last-child{
+    margin-left: 10px;
+}
+
+.other-posts-title{
+    background: rgb(64, 15, 97);
+    color: rgba(255, 255, 255, 0.87);
+    border-radius: 50px;
+    text-align: center;
+}
+.blog-link{
+    text-decoration: none;
+    color: black;
+}
+.blog-link:hover{
+    text-transform: underline;
+}
+
+.article-post{
+    font-family: dosis;
+    font-size: 1.3rem;
+}
+

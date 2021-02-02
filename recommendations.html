@@ -2,104 +2,245 @@
 <html lang="en">
 <head>
     <link rel="icon" href="./Assets/Images/logos/Logo.png">
-    <title>CV</title>
+    <title>Recommendations</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="./Assets/CSS/all.min.css">
+    <script src="./Assets/JavaScript/all.min.js"></script>
+    <link rel="stylesheet" href="./Assets/CSS/custom.css">
 </head>
-<body link="#59baa7" vlink="#b8ae95" background="./Assets/Images/background.jpg" text="#fff">
-    <a href="index.html"><h1 align="center">Natnael Bekabtu</h1></a>
-    <hr>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <strong>
-        <a href="index.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="blog.html">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="CV.html">Credentials</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#">Recommendations</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="search">Search &nbsp;</label><input type="search">
-    </strong>
-    <hr>
-    <table align="center"  border="0">
-        <tr><td align="left" ><h1>A List of my Recommendations </h1><p>...This list is weekly updated to show Recommendations and tips for new things...</p></td>
-            <td></td>
-                <td>
-                    <table align="right">
-                        <tr>
-                        <td><h3>Connect with me:</h3></td></tr>
-                        <tr> 
-                           <td> 
-                            <a href="https://www.facebook.com/" target="blank"><img src="./Assets/Images/logos/facebook.png" alt="facebook logo"></a>&nbsp;&nbsp;
-                            <a href="htts://www.twitter.com/bekabtu" target="blank"><img src="./Assets/Images/logos/twitter.png" alt="Twitter logo"></a>&nbsp;&nbsp;
-                            <a href="https://www.linkedin.com/" target="blank"><img src="./Assets/Images/logos/linkedin.png" alt="Linkedin logo"></a>&nbsp;&nbsp;
-                        </td>
-                        </tr>
-                    </table>
-                </td>
-        </tr>
-        <tr><td>-------------------------------------------------------------------------------------------------------------------------------</td></tr>
-        <tr><td><h2>1. Books</h2>
+<body>
+    <!--Header -->
+<div class="header container container-sm my-3  bg-white">
+    <a href="index.html" style="text-decoration:none;"><h1 class="display-4 pb-3 text-center font-weight-bold" style="color: rgb(64, 15, 97);">Natnael Bekabtu</h1></a>
+</div>
+
+<!--Navigation-->
+<nav class="navigation container container-sm navbar navbar-expand-md  navbar-dark">
+    <!--Toggler Button for navigation-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link ">Blog</a> 
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="CV.html" class="nav-link">Credentials</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Recommendations</a>
+            </li>
+        </ul>
+    </div>   
+</nav>
+<!--Navigation--> 
+<div class="main-content container container-sm bg-white mb-3 pb-1 ">
+
+    <div class="row">
+        <div class="col-md-8 pt-2 main-content-inner">
+            <h1>A List of my Recommendations </h1><p>...This list is weekly updated to show Recommendations and tips for new things...</p>
+            <hr>
+            <h2>1. Books</h2>
             <ul>
                 <li>Fantasy fiction
                     <ul>
-                        <li>A Song of Ice and Fire: This series by George R. R. martin is set in the mystical lands of westeros. <br>
+                        <li>A Song of Ice and Fire: This series by George R. R. martin is set in the mystical lands of westeros.
                         The powerful familes Stark, Targaryen, Baratheon, Lannister and Tyrell all fight to have all the power and glory.</li>
-                        <li>Harry Potter: Set in a magical world that exists within ours, this books follows the story of a boy who against <br>
-                             all odds survives a killing curse by one of the most powerful wizards known. The story follows the growth of Harry <br> 
+                        <li>Harry Potter: Set in a magical world that exists within ours, this books follows the story of a boy who against 
+                             all odds survives a killing curse by one of the most powerful wizards known. The story follows the growth of Harry 
                              and how he deals with many challenges in his life.</li>
-                        <li>Artemis Foul: Artemis Foul is an evil genius who is only thirteen. The boy discovers magical creatures and <br>
+                        <li>Artemis Foul: Artemis Foul is an evil genius who is only thirteen. The boy discovers magical creatures and 
                         , helped by his servand Butler, come up with nasty plans aimed at his new discovery.</li>
                     </ul>
                 </li>
                 <li>Scientific books
                     <ul>
-                        <li>A brief history of time: written by the brillian physicist Stephen Hawking, he outlines the major discoveries <br>
+                        <li>A brief history of time: written by the brillian physicist Stephen Hawking, he outlines the major discoveries
                         in physics that have revolutionized mankind. He starts from Newton all the way through Einstein and Schrodinger.</li>
-                        <li>Guns, germs and Steel: Jared Diamond takes a scientific approach to history as he tries to answer deep questions <br>
-                        like why have have of mankind rich and the other hal poor by looking at various geological evidences. <br>
+                        <li>Guns, germs and Steel: Jared Diamond takes a scientific approach to history as he tries to answer deep questions 
+                        like why have have of mankind rich and the other hal poor by looking at various geological evidences. 
                         </li>
                     </ul>
 
                 </li>
             </ul>
-        </td></tr>
-        <tr><td><h2>2. Movies</h2>
+            <h2>2. Movies</h2>
             <ul>
                 <li>Series
                     <ul>
                         <li>Game of Thrones: Follows the story of the book a song of ice and fire.</li>
-                        <li>Breaking Bad: A chemistry teacher diagnosed with cancer considers selling methamphetemine so that he could leave <br>
+                        <li>Breaking Bad: A chemistry teacher diagnosed with cancer considers selling methamphetemine so that he could leave 
                             this world knowing his family is financially independent
                         </li>
                     </ul>
                 </li>
                 <li>Feature Films
                     <ul>
-                        <li>Inception: Written and Directed by Cristopher Nolan, Inception explores the world of dreams and challegens <br>
+                        <li>Inception: Written and Directed by Cristopher Nolan, Inception explores the world of dreams and challegens 
                         the meaning of reality.</li>
                         <li>Interstellar: This masterpiece follows the story of astraunauts who seek another planet as earth slowly br
                             sufficates her inhabitants.</li>
                     </ul>
                 </li>
             </ul>
+            <hr>
+            <strong>Life hack of the week :</strong> search any movie on google using keyword "movie name" site:drive.google.com 
+        this searches the movies publicly hosted on google drive by users.
 
+        </div>
+        <div class="col-md-4" >
+            <div class="container pb-2 pt-2 connect-with-me">
+                <h5 style="text-transform: uppercase; font-size: medium;font-weight: lighter;">connect with me</h5>                  
+                <a href="https://www.facebook.com/" target="blank"><img src="./Assets/Images/logos/facebook.png" alt="facebook logo"></a>&nbsp;&nbsp;
+                <a href="htts://www.twitter.com/bekabtu" target="blank"><img src="./Assets/Images/logos/twitter.png" alt="Twitter logo"></a>&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/" target="blank"><img src="./Assets/Images/logos/linkedin.png" alt="Linkedin logo"></a>&nbsp;&nbsp;
+            </div>
+            <hr> 
+            <div class="container">
+              <h5 style="text-transform: uppercase; font-size: medium;font-weight: lighter;">follow me on twitter</h5>
+              <div class="d-flex justify-content-center">
+                <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/DrStevenKinnear?ref_src=twsrc%5Etfw">Tweets by DrStevenKinnear</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
+            </div>
+            <hr>
+        </div>
+            
+    </div>
+               
+</div>
+    
+
+<!-- Footer -->
+<footer class="container page-footer text-white font-small">
+
+    <!-- Footer Links -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row text-center text-white d-flex justify-content-center pt-5 mb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="index.html" class="text-light small" style="text-decoration: none;">About</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 ">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="blog.html" class="text-light small" style="text-decoration: none;">Blog</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 ">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="contact.html" class="text-light small" style="text-decoration: none;">Contact</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="CV.html" class="text-light small" style="text-decoration: none;">Credentials</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="recommendations.html" class="text-light small" style="text-decoration: none;">Recommendations</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+      <hr style="border-color:white;margin: 0 15%;">
+  
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+  
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-4">
+          <p style="line-height: 1.3rem">Estabished since 2019, this site is made to entertain as well as inform.</p>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+      
+      <hr class="mb-4" style="border-color:white;margin: 0 15%;">
+      <!-- Grid row-->
+      <div class="row mb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-12">
+  
+          <div class="d-flex justify-content-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic text-light" href="https://www.facebook.com">
+              <i class="fab fa-facebook fa-lg mr-4"></i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic text-light" href="https://www.twitter.com/bekabtu">
+              <i class="fab fa-twitter fa-lg mr-4"> </i>
+            </a>
+            
+            <!--Linkedin -->
+            <a class="li-ic text-light" href="https://www.linkedin.com">
+              <i class="fab fa-linkedin-in fa-lg mr-4"> </i>
+            </a>
+           
+  
+          </div>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    
+    <div class="text-center py-3" style="background-color: rgba(51, 13, 77, 0.575);margin-left: -15px;margin-right: -15px;">© 2020 Copyright:
+      <a href="index.html" class="text-secondary"  style="text-decoration:none;color: rgb(157, 117, 184);"><em> NATNAEL BEKABTU</em></a>
+    </div>
+    
+    
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
+    
+        
+        
+        </td></tr>
+        <tr><td>
         </td></tr>
         <tr><td>-------------------------------------------------------------------------------------------------------------------------------</td></tr>
-        <tr><td><strong>Life hack of the week :</strong> search any movie on google using keyword "movie name" site:drive.google.com <br>
-        this searches the movies publicly hosted on google drive by users.</td>
+        <tr><td></td>
          </tr>
         
     </table>
